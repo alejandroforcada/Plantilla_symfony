@@ -1,8 +1,9 @@
-
-
+{% extends "base.html.twig" %}
 {% block title %}Log in!{% endblock %}
+{% block cssstyle %}sub_page{% endblock %}
 
 {% block body %}
+</div>
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
