@@ -4,7 +4,7 @@
 
 {% block body %}
 </div>
-<form method="post">
+<form method="post" enctype='multipart/form-data'>
    
 
     {% if app.user %}
@@ -16,9 +16,7 @@
     <h1 class="h3 mb-3 font-weight-normal">Please join us</h1>
 {{form(formulario)}}
 
-    <button class="btn btn-lg btn-primary" type="submit">
-        Join Us
-    </button>
+    
     <a href="{{ path('app_login') }}"> Login</a>
 </form>
 {% endblock %}
